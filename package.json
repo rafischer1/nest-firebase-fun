@@ -23,8 +23,10 @@
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
+    "@types/firebase": "^3.2.1",
     "firebase": "^10.5.2",
     "firebase-admin": "^11.11.0",
+    "nestjs-firebase": "^10.2.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1"
   },

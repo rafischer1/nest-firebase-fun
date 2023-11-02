@@ -1,9 +1,11 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, Module } from '@nestjs/common';
+import { FirebaseModule } from 'nestjs-firebase';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    console.log('Listening on :3200...');
-    return 'Running...';
+  constructor(private readonly firebase: FirebaseService) {}
+
+  async connect() {
+    await this.firebase.connect();
   }
 }
