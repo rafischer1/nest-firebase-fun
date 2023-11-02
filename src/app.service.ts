@@ -1,11 +1,13 @@
-import { Injectable, Module } from '@nestjs/common';
-import { FirebaseModule } from 'nestjs-firebase';
+import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  constructor(private readonly firebase: FirebaseService) {}
+  constructor() {}
 
-  async connect() {
-    await this.firebase.connect();
+  // async connect() {
+  //   await this.firebase.connect();
+  // }
+  getHello() {
+    return 'hello';
   }
 }
