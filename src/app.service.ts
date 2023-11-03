@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable } from "@nestjs/common";
 
 @Injectable()
 export class AppService {
@@ -8,6 +8,6 @@ export class AppService {
   //   await this.firebase.connect();
   // }
   getHello() {
-    return 'hello';
+    return { hi: "hello" };
   }
 }
