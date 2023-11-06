@@ -16,10 +16,21 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
-## App Checklist
+-------------------
+
+## App Checklist 🧾
 
 [x] setup ORM generator for applesauce table
 
 [x] create USERS column with nullable and non-nullable fields extending BASE_ENTITY
 
 [ ] setup CRUD operations for users
+
+------------
+
+## Package Documentation 📝
+
+
+### [TypeORM](https://typeorm.io/data-source)
+### [NestJS](https://docs.nestjs.com/)
+### [PSQL](https://www.postgresql.org/docs/16/index.html)
