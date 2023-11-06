@@ -6,7 +6,7 @@ export const orm_config: TypeOrmModuleOptions = {
   host: "127.0.0.1",
   database: "applesauce",
   synchronize: true,
-  entities: ["dist/**/*.entity{.ts,.js}"],
+  entities: ["dist/**/*.entity{.ts,.js}"], // * or [Users, Roles, Permissions, etc...]
   username: "applesauce",
   password: "root",
 };
