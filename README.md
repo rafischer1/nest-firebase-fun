@@ -1,9 +1,9 @@
-# 🐺 NestJS and Firebase Demo 🦩
+# 🐺 NestJS 🐘 PSQL and 🦩 Firebase  
 ```bash
 # install
 $ yarn install
 # development
-$ yarn run start
+$ yarn start
 # watch mode
 $ yarn run start:dev
 # production mode
@@ -16,6 +16,10 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
-## APP
+## App Checklist
 
-1. Setup CRUD operations for users
+[x] setup ORM generator for applesauce table
+
+[x] create USERS column with nullable and non-nullable fields extending BASE_ENTITY
+
+[ ] setup CRUD operations for users
