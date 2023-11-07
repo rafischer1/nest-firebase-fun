@@ -24,7 +24,7 @@ $ yarn run test:cov
 
 [x] create USERS column with nullable and non-nullable fields extending BASE_ENTITY
 
-[ ] setup CRUD operations for users
+[x] setup CRUD operations for users
 
 ------------
 
@@ -34,3 +34,11 @@ $ yarn run test:cov
 ### [TypeORM](https://typeorm.io/data-source)
 ### [NestJS](https://docs.nestjs.com/)
 ### [PSQL](https://www.postgresql.org/docs/16/index.html)
+
+--------------------
+
+```bash
+curl -v -H "Content-Type: application/json" -X POST      
+-d '{"firstName":"Fake","lastName":"Name","alternateName":"Goofball", 
+"email":"badmanting@badman.com"}' http://localhost:4000/users
+```
