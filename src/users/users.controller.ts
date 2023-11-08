@@ -22,22 +22,25 @@ export class UsersController {
 
   @Get()
   getAllUsers() {
-    console.log("GET");
+    console.log("GET USERS");
     return this.usersService.getAllUsers();
   }
 
   @Get(":id")
   userById(@Param("id") id: string) {
+    console.log("GET USER:", id);
     return this.usersService.userById(+id);
   }
 
   @Patch(":id")
   updateUser(@Param("id") id: string, @Body() updateUserDto: UpdateUserDto) {
+    console.log("UPDATE USER:", id);
     return this.usersService.update(+id, updateUserDto);
   }
 
   @Delete(":id")
   delete(@Param("id") id: string) {
+    console.log("DELETE USER:", id);
     return this.usersService.delete(+id);
   }
 }

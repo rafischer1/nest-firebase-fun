@@ -17,7 +17,6 @@ export class UsersService {
   }
 
   async getAllUsers() {
-    console.log("getAll called");
     return await this.userRepository.find();
   }
 
